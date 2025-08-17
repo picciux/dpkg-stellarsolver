@@ -1,0 +1,21 @@
+Source: libstellarsolver
+Section: libs
+Priority: optional
+Maintainer: Matteo Piscitelli <matteo@matteopiscitelli.it>
+Build-Depends: debhelper-compat (= 13), cmake, qtbase5-dev, zlib1g-dev, libcfitsio-dev, wcslib-dev, libgsl-dev
+Standards-Version: 4.5.1 
+Homepage: https://github.com/rlancaste/stellarsolver.git
+
+Package: libstellarsolver2
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: StellarSolver Library
+ This package includes an Astrometric Plate Solver for Mac, Linux, and Windows, 
+ built on Astrometry.net and SEP.
+
+Package: libstellarsolver-dev
+Architecture: any
+Depends: libstellarsolver2 (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
+Description: StellarSolver Library development headers
+ This package includes development headers for an Astrometric Plate Solver 
+ for Mac, Linux, and Windows, built on Astrometry.net and SEP.

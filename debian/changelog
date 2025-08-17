@@ -1,0 +1,5 @@
+libstellarsolver (2.7+ds1-1) bookworm; urgency=low
+
+  * Repackage stellarsolver ver. 2.7 for bookworm.
+
+ -- Matteo Piscitelli <matteo@matteopiscitelli.it>  Sun, 17 Aug 2025 13:54:37 +0200
